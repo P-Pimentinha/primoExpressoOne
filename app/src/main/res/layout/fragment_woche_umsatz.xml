@@ -1,14 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".wocheUmsatz">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+    <EditText
+        android:id="@+id/etFriday"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Friday"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/tvFriday"
+        app:layout_constraintTop_toBottomOf="@+id/etThursday" />
+
+    <TextView
+        android:id="@+id/tvWednesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Wednesday"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvTuesday"
+        app:layout_constraintTop_toBottomOf="@+id/tvTuesday" />
+
+    <TextView
+        android:id="@+id/tvTuesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Tuesday"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvMonday"
+        app:layout_constraintTop_toBottomOf="@+id/tvMonday" />
+
+    <TextView
+        android:id="@+id/tvThursday"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Thursday"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvWednesday"
+        app:layout_constraintTop_toBottomOf="@+id/tvWednesday" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:backgroundTint="@color/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:text="Send"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etTuesday"
+
+        android:layout_width="213dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:hint="Tuesday"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/tvTuesday"
+        app:layout_constraintTop_toBottomOf="@+id/etMonday" />
+
+
+    <EditText
+        android:id="@+id/etThursday"
+
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Thursday"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/tvThursday"
+        app:layout_constraintTop_toBottomOf="@+id/etWednesday" />
+
+    <TextView
+        android:id="@+id/tvFriday"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Friday"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvThursday"
+        app:layout_constraintTop_toBottomOf="@+id/tvThursday" />
+
+    <EditText
+        android:id="@+id/etMonday"
+
+        android:layout_width="213dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="92dp"
+        android:ems="10"
+        android:hint="Monday"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/tvMonday"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMonday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="112dp"
+        android:text="Monday"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etWednesday"
+
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Wednesday"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/tvWednesday"
+        app:layout_constraintTop_toBottomOf="@+id/etTuesday" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

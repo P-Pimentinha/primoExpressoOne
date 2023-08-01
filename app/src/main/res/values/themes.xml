@@ -2,7 +2,8 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.PrimoExpresso" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/blue</item>
+
     </style>
 
     <style name="Theme.PrimoExpresso" parent="Base.Theme.PrimoExpresso" />

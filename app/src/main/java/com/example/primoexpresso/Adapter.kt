@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.primoexpresso.Model.DrinkModel
 
+
 class Adapter(private val drinklist: ArrayList<DrinkModel>): RecyclerView.Adapter<Adapter.MyViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Adapter.MyViewHolder {

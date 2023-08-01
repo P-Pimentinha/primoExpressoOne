@@ -1,5 +1,6 @@
 package com.example.primoexpresso.Model
 
+
 class DrinkModel {
 
     private var name: String = "";
@@ -9,6 +10,7 @@ class DrinkModel {
         this.name = name
         this.quantity = quantity
     }
+
 
     fun getDrinkName(): String {
         return this.name;
